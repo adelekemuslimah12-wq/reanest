@@ -1958,7 +1958,7 @@ details p {
     font-weight: 700;
     text-decoration: none;
 }
-.col a:hover { text-decoration: underline; }
+.col a:hover { text-decoration: none; }
 
 .career {
     display: flex;
