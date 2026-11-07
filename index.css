@@ -82,11 +82,10 @@ nav {
     align-items: center;
     gap: 10px;
 }
-.dropdownContents p span {
-    font-size: 25px;
-    font-weight: 100;
-    font-family: sans-serif;
-    margin-bottom: 10px;
+.dropdownContents p  {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 .dropdownContent {
     position: relative;
@@ -351,7 +350,7 @@ hr {
         border: none;
     }
     .dropdowns1 { 
-        padding: 10px 15px; margin-top: 10px;  text-align: left;
+        padding: 10px 15px; margin-top: 10px;
     }
     #menu-toggle:checked ~ .navlink2 {
         display: flex;
