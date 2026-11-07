@@ -125,6 +125,7 @@ nav {
     border-radius: 10px;
     border: 2px solid #dddddd;
     padding: 15px;
+    /* margin-left: 50px; */
     justify-self: center;
     position: absolute;
     display: none;
@@ -153,7 +154,7 @@ nav {
     display: block;
 }
 .navlink2 {
-    margin-left: 70px;
+    margin-left: 120px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -233,7 +234,8 @@ hr {
 {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
+    margin-left: 25px;
     justify-content: space-between;
 }
 .navlink1 a {
