@@ -281,7 +281,7 @@ hr {
 
 @media (max-width: 1200px) {
     nav { 
-        height: 70px; 
+        height: 70px;
     }
     .business {
         width: 100%;
@@ -296,7 +296,7 @@ hr {
     .burger {
         display: block;
         margin-left: auto;
-        margin-left: -10px;
+        margin-left: 20px;
         font-size: 28px;
         color: #4e3fd7;
         cursor: pointer;
@@ -492,13 +492,14 @@ hr {
     align-items: center;
     justify-content: center;
     font-weight: 600;
-}
-.download {
     width: 180px;
     height: 45px;
     background-color: #cbc5f4;
     border-radius: 10px;
     border: 1px solid white;
+}
+.app img:hover {
+    color: black;   
 }
 .creates3 {
     display: flex;
@@ -539,49 +540,24 @@ hr {
 .app {
     color: black;
 }
-.girl {
-    display: flex;
-}
 .girl2 {
-    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67fd3b6d48813d28793babef_Hero%20img%20personal.webp);
-    width: 800px;
-    height: 123vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -532px;
-    margin-left: 498px;
-}
-.girl2 img {
     position: relative;
-    left: 70px;
-    bottom: -550px;
-    background-color: rgb(25, 20, 65, 0.60);
-    border-radius: 30px;
-    border: none;
+    width: 600px;
+    margin-left: 400px;
+    margin-top: -540px;
 }
 
-@media (max-width: 900px) {
-  .hero { 
-    padding: 10px 10px 0;
-    }
-  .girl { 
-    flex-direction: column; align-items: stretch; 
-    margin-left: -25px;
-    margin-top: -100px;
+.first-girl img {
+    display: block;
 }
-  .girl1 { padding-bottom: 20px; }
-  .letter h1 { font-size: 44px; margin-top: 28px; }
-  .letter h1 br, .letter p br { display: none; }  
-  .creates3 { flex-wrap: wrap; }
-  .girl2 { 
-    flex-direction: column;
-    justify-content: center; 
+
+.girl-card {
+    position: absolute;
+    width: 330px;
+    left: 150px;
+    bottom: 70px;
 }
-  .flag {
-    width: 300px;
-  }
-}
+
 
 .backed {
     margin-top: 50px;
@@ -920,7 +896,6 @@ hr {
     margin-left: -107px;
     position: relative;
     z-index: 1000;
-    background-color: #aeb1bb;
     border-radius: 30px;
 }
 .paid6 {
