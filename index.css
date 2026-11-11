@@ -534,6 +534,7 @@ hr {
     box-shadow: 0 2px 8px #0002;
     border-radius: 25px;
     align-items: center;
+    z-index: 1000;
 } 
 .dropscan:hover  .scan{
     display: flex;
@@ -552,6 +553,7 @@ hr {
 
 .first-girl img {
     display: block;
+    width: 1000px;
 }
 
 .girl-card {
@@ -559,18 +561,6 @@ hr {
     width: 330px;
     left: 150px;
     bottom: 70px;
-}
-
-.backed {
-    margin-top: 50px;
-    text-align: center;
-}
-.backed p{
-    font-size: 13px;
-    font-family: sans-serif;
-}
-.investors img {
-    margin: 0 60px;
 }
 
 @media (max-width: 1280px) {
@@ -660,7 +650,27 @@ hr {
     .girl-card { 
         display: none;
     }
+    .first-girl img {
+        width: 600px;
+        text-align: center;
+        margin-left: 230px;
+        margin-top: 74px;
+        z-index: 0;
+    }
 }
+
+.backed {
+    margin-top: 50px;
+    text-align: center;
+}
+.backed p{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.investors img {
+    margin: 0 60px;
+}
+
 
 .hear h2 {
     font-size: 45px;
