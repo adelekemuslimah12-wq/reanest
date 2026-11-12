@@ -659,7 +659,7 @@ hr {
     }
 }
 
-.backed {
+/* .backed {
     margin-top: 50px;
     text-align: center;
 }
@@ -669,8 +669,88 @@ hr {
 }
 .investors img {
     margin: 0 60px;
+} */
+
+/* ===== BACKED BY: all screens ===== */
+.investors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 100px;             /* row gap, column gap: replaces the old margins */
+}
+.backed {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.investors img {
+    margin: 10px 40px;                  /* the gap above now does this job */
+}
+.png1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.png2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
+/* ===== LAPTOP (1025px to 1440px) ===== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .investors { 
+        gap: 10px 10px; 
+    }
+}
+
+/* ===== TABLET (601px to 1024px) ===== */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .backed { 
+        padding: 0 30px; 
+    }
+    .investors { 
+        gap: 10px 10px; 
+    }
+}
+
+/* ===== PHONE (600px and below) ===== */
+@media (max-width: 600px) {
+    .backed { 
+        padding: 0 20px; 
+    }
+    .backed p { 
+        font-size: 11px; 
+    }
+    .investors { 
+        margin-left: 150px;
+        /* width: 100px; */
+        margin-top: -50px;
+    }
+    .investors img { 
+        max-width: 200px; 
+        height: auto; 
+        margin-left: -100px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }   /* keeps the logos small */
+    .png1 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 75px;   
+    }
+    .png2 {
+        order: 1;
+        margin-top: 100px;
+        margin-left: -350px;
+        display: flex;
+        align-items: center;
+        gap: 190px;
+        justify-content: center;
+    }
+    
+}
 
 .hear h2 {
     font-size: 45px;
@@ -686,14 +766,15 @@ hr {
     text-align: center;
 }
 .hear {
-    margin-top: 230px;
-    margin-right: 250px;
+    margin-top: 270px;
+    margin-left: -200px;
 }
 .banji {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     max-width: 1000px;
     margin: -100px 0 0;
+    margin-bottom: 60px;
 }
 .kenya {
     margin-top: 100px;
@@ -738,6 +819,7 @@ hr {
     font-size: 13px;
     color: black;
     line-height: 1.4;  margin-top: -20px; 
+    word-spacing: -2px;
 }
 .kenya p {
     font-family: sans-serif;
@@ -745,6 +827,7 @@ hr {
     color: black;
     line-height: 1.4;
     margin-top: -20px;
+    word-spacing: -2px;
 }
 .kevin {
     display: flex;
@@ -768,16 +851,32 @@ hr {
     letter-spacing: -0.5px;
     padding-top: 50px;
 }
-.video {
-    width: 330px;
-    height: 60vh;
-    border-radius: 10px;
-    margin-top: 100px;
-}
 .banji {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
+    /* margin-left: 2000px; */
+}
+.talking-girl {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680c851c995fd04d3c69dbd0_Geegpay%20testimonal.jpg);
+    width: 320px;
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.video-box {
+    margin-top: 90px;
+}
+.talking-girl span {
+    position: relative;
+    top: 170px;
+    left: 120px;
+}
+.ken {
+    margin-left: 800px;
 }
 .stars {
     width: 340px;
@@ -793,46 +892,76 @@ hr {
     font-family: sans-serif;
     font-size: 15px;
     font-weight: 600;
-    margin: 20px 300px;
+    margin-top: 40px;
+    margin-left: 280px;
 }
 .love {
     margin-left: 200px;
 }
 
-@media (max-width: 1000px) {
-  .video-box { 
-    display: none; 
+@media (min-width: 1101px) and (max-width: 1440px) {
+    .talking-girl img {
+        width: 200px;
+        height: 200px;
+    }
+    .banji { 
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 30px;
+    }
+    .hear h2 { 
+        font-size: 38px; 
+    }
 }
-  .banji { 
-    grid-template-columns: 1fr 1fr; 
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 30px;
-}
-  .hear h2 { 
-    font-size: 38px; 
-}
+/* ===== TABLET (601px to 1024px) ===== */
+@media (min-width: 1032px) and (max-width: 1376px) {
+    .backed { 
+        padding: 0 30px; 
+    }
+    .investors { 
+        gap: 10px 5px; 
+    }
 }
 
 @media (max-width: 600px) {
-  .love { 
-    padding: 40px 16px; 
-}
-  .banji { 
-    grid-template-columns: 1fr 1fr; 
-}
+    .talking-girl {
+        display: none;
+    }
+    .kevin1 {
+        display: none;
+    }
+    .ken1 {
+        margin-top: 50px;
+    }
+    .banji {
+        margin-left: -890px; 
+    } 
+    .kenya {
+        width: 150px;
+    }
+    .kenya1 {
+        width: 150px;
+        margin-left: -50px;
+    }
+    .love { 
+        margin-top: -50px; 
+        margin-left: 230px;
+    }
+    .banji { 
+        grid-template-columns: 1fr 1fr; 
+    }
 
-  .hear h2 { 
-    font-size: 30px; 
-    letter-spacing: -1px; 
-}
-  .hear p  { 
-    font-size: 18px; 
-    margin-bottom: 32px; 
-}
+    .hear h2 { 
+        font-size: 30px; 
+        letter-spacing: -1px; 
+    }
+    .hear p  { 
+        font-size: 18px; 
+        margin-bottom: 32px; 
+    }
     .hear {
         text-align: center;
         width: 300px;
@@ -846,6 +975,7 @@ hr {
     flex-direction: column; 
 }
 }
+
 
 .motherpanel {
     margin-top: 100px;
@@ -1428,7 +1558,15 @@ hr {
     margin-top: -10px;
   }
   .fiver br,
-  .toptal br { display: none; }
+  .toptal br { 
+    display: none; 
+  }
+  .stars {
+    margin-left: -200px;
+    width: 350px;
+    height: 35px;
+  }
+
 }
 
 .headers {
@@ -1439,6 +1577,8 @@ hr {
     margin-top: 150px;
     margin-left: 50px;
 }
+
+
 
 .headers h2 {
     margin: 0;
@@ -1453,7 +1593,7 @@ hr {
     padding: 6px;
     border: 1px solid #e5e5e5;
     border-radius: 999px;
-    background: #fafafa;
+    background-color: #fafafa;
     margin-left: -30px;
 }
 .tabs a {
@@ -1475,7 +1615,6 @@ hr {
     position: relative;
     color: white;
 }
-.slider::-webkit-scrollbar { display: none; }
 .slide-1 {
     background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6809058ad8a04756d5810503_who%20we%20serve%2001.webp);
     width: 90%;
@@ -1521,6 +1660,9 @@ hr {
     font-weight: 600;
     letter-spacing: -1px;
     padding: 30px 0 0 50px;
+}
+.slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
+    scroll-margin-top: 200px;
 }
 .clients p {
     font-family: sans-serif;
@@ -1582,6 +1724,26 @@ hr {
     flex: 0 0 70%;
     min-width: 0;
 }
+/* tablet and phone: smaller text and no forced line breaks */
+@media (max-width: 1100px) {
+    .slide-1 h2, .slide-2 h2, .slide-3 h2, .slide-4 h2, .slide-5 h2 {
+        font-size: 28px;
+    }
+    .clients p, .clients1 p { font-size: 16px; }
+    .clients p br, .clients1 p br { display: none; }   /* text wraps by itself */
+}
+
+@media (max-width: 600px) {
+    .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
+        padding: 25px 20px;
+    }
+    .slide-1 h2, .slide-2 h2, .slide-3 h2, .slide-4 h2, .slide-5 h2 {
+        font-size: 24px;
+    }
+    .clients p, .clients1 p { font-size: 15px; }
+}
+
+
 
 .steps {
     display: flex;
