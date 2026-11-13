@@ -24,8 +24,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
-    margin: 60px;
+    gap: 10px;
+    margin: 10px;
 }
 .personal {
     text-decoration: none;
@@ -386,7 +386,7 @@ hr {
 @media (max-width: 768px) {
     .business { 
         gap: 8px; 
-        padding: 0 12px; 
+        /* padding: 0 12px;  */
     }
     .business > img { 
         width: 95px; 
@@ -547,8 +547,8 @@ hr {
 .girl2 {
     position: relative;
     width: 600px;
-    margin-left: 500px;
-    margin-top: -540px;
+    margin-left: 700px;
+    margin-top: -490px;
 }
 
 .first-girl img {
